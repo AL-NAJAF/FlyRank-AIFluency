@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Najaf Shehzad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<meta name="description" content="TrafficSmart: a real-time vehicle congestion detection system built end-to-end, from a self-collected 7,000+ image dataset to a working monitoring app.">
+<link rel="canonical" href="https://al-najaf.github.io/work.html">
+<link rel="icon" type="image/png" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/favicon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Work — TrafficSmart Case Study — Najaf Shehzad">
+<meta property="og:description" content="TrafficSmart: a real-time vehicle congestion detection system built end-to-end, from a self-collected 7,000+ image dataset to a working monitoring app.">
+<meta property="og:url" content="https://al-najaf.github.io/work.html">
+<meta property="og:image" content="https://al-najaf.github.io/images/social-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Work — TrafficSmart Case Study — Najaf Shehzad">
+<meta name="twitter:description" content="TrafficSmart: a real-time vehicle congestion detection system built end-to-end, from a self-collected 7,000+ image dataset to a working monitoring app.">
+<meta name="twitter:image" content="https://al-najaf.github.io/images/social-share.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="index.html">Najaf Shehzad</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="work.html" class="active">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap">
+      <h1>TrafficSmart — Vehicle Congestion Detection</h1>
+      <div class="accent-line"></div>
+      <p class="muted">A real-time congestion monitoring system, built end-to-end for city governments and everyday commuters.</p>
+
+      <div class="case-block">
+        <h2>The Problem</h2>
+        <p>City roads were overloaded. Commuters couldn't find clear routes to school, work, or home, and the local government had no reliable way to see where congestion was worst and where roads needed expansion. My university flagged this as a real, government-relevant problem worth solving.</p>
+      </div>
+
+      <div class="case-block">
+        <h2>What I Did</h2>
+        <p>I built TrafficSmart as a full, branded, working app with two roles: <strong>Admin</strong> and <strong>Citizen</strong>. That split keeps day-to-day commuters focused on the one thing they need (where's it congested right now), while giving whoever runs the deployment full control over the camera network. Underneath both roles is the same detection pipeline: I collected and annotated the dataset myself, over 7,000 images shot on my phone from real traffic, labeled in RoboFlow across five vehicle classes (car, bus, truck, motorcycle, other), and trained on YOLOv8, chosen for its speed-accuracy tradeoff based on professors' advice and my own research. Getting usable footage wasn't simple, I had to return to shoot locations multiple times to fix awkward angles and inconsistent quality, since clean, ready-to-use datasets like the ones on Kaggle don't exist in the real world.</p>
+
+        <div class="image-row">
+          <figure>
+            <img class="shot" src="images/trafficsmart-login.jpg" alt="TrafficSmart app login screen, showing Citizen and Admin access levels.">
+            <figcaption>Login: choose Citizen or Admin</figcaption>
+          </figure>
+        </div>
+        <p class="caption" style="margin-top: -8px;">The shared login screen. Full breakdown of what each role can access is below.</p>
+
+        <div class="role-block">
+          <h3>Citizen screens</h3>
+          <p class="role-desc">Read-only, built for a commuter checking the road ahead: the color-coded routes map, and search-by-camera to see a specific route's live vehicle counts.</p>
+          <div class="image-row">
+            <figure>
+              <img class="shot" src="images/hero-routes-map.jpg" alt="Citizen routes map, color-coded smooth, moderate, and heavy congestion across Islamabad and Rawalpindi.">
+              <figcaption>Routes map, color-coded by congestion</figcaption>
+            </figure>
+            <figure>
+              <img class="shot" src="images/ccc01-analytics.jpg" alt="Citizen route analytics screen for CCC-01, Chandni Chowk, showing the 5-class vehicle breakdown and hourly traffic volume.">
+              <figcaption>Route analytics for a searched camera</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="role-block">
+          <h3>Admin screens</h3>
+          <p class="role-desc">Full control for whoever runs the deployment: log in, add and pin new cameras, monitor every feed live, and pull full route analytics across the network.</p>
+          <div class="image-row">
+            <figure>
+              <img class="shot" src="images/trafficsmart-login.jpg" alt="TrafficSmart app login screen, showing Citizen and Admin access levels.">
+              <figcaption>Login: choose Citizen or Admin</figcaption>
+            </figure>
+            <figure>
+              <img class="shot" src="images/camera-fleet.jpg" alt="Admin camera fleet dashboard showing 3 active cameras deployed across Rawalpindi.">
+              <figcaption>Manage the camera fleet</figcaption>
+            </figure>
+            <figure>
+              <img class="shot" src="images/live-monitoring.jpg" alt="Admin live monitoring grid showing 3 cameras online and streaming.">
+              <figcaption>Live monitoring, cameras online</figcaption>
+            </figure>
+            <figure>
+              <img class="shot" src="images/add-camera.jpg" alt="Admin screen for adding a new camera, with name, camera ID, and map pin location.">
+              <figcaption>Add and pin a new camera</figcaption>
+            </figure>
+            <figure>
+              <img class="shot" src="images/ccc01-analytics.jpg" alt="Admin route analytics screen for CCC-01, Chandni Chowk, showing the 5-class vehicle breakdown and hourly traffic volume.">
+              <figcaption>Route analytics (same view, plus full network access)</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-block">
+        <h2>What Came of It</h2>
+        <p>The model detects vehicles at 80-90% accuracy across all five classes, though about 10% of detections are still misclassified, something I'm actively investigating (most likely class imbalance between bus and truck). Right now it runs on recorded footage, not live camera feeds yet, so the next real milestone is deploying the model so it can process a live camera feed directly instead of pre-recorded video. The zero counts visible in the analytics screenshot above reflect that: no footage had been uploaded to that route at capture time, the 5-class breakdown and hourly volume chart underneath are real and working.</p>
+
+        <p class="muted">Next iteration: deploy the model to run on a live feed (not just recorded video), better-planned data collection upfront, and earlier annotation quality checks.</p>
+      </div>
+
+      <a class="btn btn-accent" href="mailto:najafshehzad67@gmail.com">Questions about how this was built? Email me</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="mailto:najafshehzad67@gmail.com" style="color: inherit;">najafshehzad67@gmail.com</a>
+    </div>
+  </footer>
+  <script data-goatcounter="https://najafshehzad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
